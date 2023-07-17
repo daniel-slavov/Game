@@ -34,8 +34,6 @@ context.Database.EnsureCreated();
 
 app.UseMiddleware<ExceptionMiddleware>();
 
-app.UseAuthorization();
-
 app.MapControllers();
 
-app.Run("http://*:80");
+app.Run();
